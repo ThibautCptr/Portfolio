@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" href="https://image.noelshack.com/fichiers/2021/53/7/1609697163-seekpng-com-portfolio-icon-png-1545314.png" />
+
+
+</head>
+<body id="body">
+
+
+
+<input type="checkbox" id="check">
+<!--header area start-->
+<header>
+    <label for="check">
+        <i class="fas fa-bars nav_btn" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+        <h3>PORTFOLIO</h3>
+    </div>
+</header>
+<!--header area end-->
+<!--mobile navigation bar start-->
+<div class="mobile_nav">
+    <div class="nav_bar">
+        <img src="https://image.noelshack.com/fichiers/2020/48/6/1606562009-avatar-pp.png" class="mobile_profile_image" alt="">
+        <p><b>CARPENTIER Thibaut</b></p>
+    </div>
+
+    <div class="mobile_nav_items">
+        <a href="index.html"><i class=" big home icon"></i><span>Index <p class="indicator"></p></span></a>
+        <a href=aboutme.html#"><i class=" big user icon"></i><span>A propos de moi</span></a>
+        <a href="projet.html"><i class="big archive icon"></i><span>Projets</span></a>
+        <a href="contact.html"><i class="big envelope icon"></i><span>Contact</span></a>
+
+        <div class="language_choose">
+            <a href="#"><img class="fr_flag" src="../../asset/icons/french_flag.png" alt="" style="text-align: center"></a>
+            <a href="../EN/index.html"><img class="uk_flag" src="../../asset/icons/united-kingdom-flag-icon-256.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<!--mobile navigation bar end-->
+<!--sidebar start-->
+<div class="sidebar">
+    <div class="profile_info">
+        <img src="https://image.noelshack.com/fichiers/2020/48/6/1606562009-avatar-pp.png" class="profile_image" alt="">
+        <h4>Thibaut</h4>
+    </div>
+    <a href="index.html"><i class=" big home icon"></i><span>Index <p class="indicator"></p> </span></a>
+    <a href="aboutme.html"><i class=" big user icon"></i><span>A propos de moi</span></a>
+    <a href="projet.html"><i class="big archive icon"></i><span>Projets</span></a>
+    <a href="contact.html"><i class="big envelope icon"></i><span>Contact</span></a>
+
+    <div class="language_choose">
+        <a href="#"><img class="fr_flag" src="../../asset/icons/french_flag.png" alt="" style="text-align: center"></a>
+        <a href="../EN/index.html"><img class="uk_flag" src="../../asset/icons/united-kingdom-flag-icon-256.png" alt=""></a>
+    </div>
+</div>
+<!--sidebar end-->
+
+
+<div class="content_page">
+
+    <div class="title">
+        <h2 class="ui center aligned icon header">
+            <i class="circular home icon"></i>
+            Index
+        </h2>
+    </div>
+    <div class="card" style="text-align: center;margin-bottom: 25px">
+            <p style="font-size: 25px">
+                Bienvenue sur mon portfolio
+            </p>
+    </div>
+
+    <div class="ui grid">
+        <div class="eight wide column">
+            <h2 class="ui horizontal divider header ">
+                <i class="big archive icon"></i>
+                Dernier projets
+
+            </h2>
+            <div class=" ui column grid" id="portfolio">
+                <div class="column">
+                    <div class="ui items">
+                        <a title="Projet en cours" class="ui red ribbon label">En cours</a>
+                        <br>
+                        <br><span class="header-item">Portfolio</span>
+                        <div class="item">
+                            <img src="https://blog.corp-site.envato.com/cdn-cgi/image/width=1200,quality=95,format=auto/uploads/2020/06/SOC101_Portfolio_Guide.png" alt="">
+
+                            <div class="content">
+                                <br>
+                                <div class="desc">
+                            <span>Crée un portfolio afin de me présenter plus en profondeur, de présenter mes projets
+                            et montrer mes compétences.</span>
+                                    <br>
+                                    <span>Utilisation pour la premiére fois du javascript.</span>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="extra">
+                                    <div class="ui label" style="font-size: 13px"><i class="fab fa-html5 fa-2x" style="color: orange"></i><span>HTML</span></div>
+                                    <div class="ui label" style="font-size: 13px"><i class="fab fa-css3-alt fa-2x" style="color: #0d0db8"></i><span>CSS</span></div>
+                                    <div class="ui label" style="font-size: 13px"><i class="fab fa-js-square fa-2x" style="color: #b3b302"></i><span>Javascript</span></div>
+                                    <div class="ui right floated primary button" onclick="window.location.href = '#' ">
+                                        <i class="large github icon"></i>Voir sur GitHub
+                                        <i class="white right chevron icon"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="ui primary button" style="width: 100%" onclick="window.location.href = 'project.html'">Acceder à la page des projets</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="eight wide column">
+            <h2 class="ui horizontal divider header ">
+                <i class="big envelope icon"></i>
+                Me contacter
+
+            </h2>
+            <div class="container-pp">
+                <div class="card-pp">
+                    <img src="https://image.noelshack.com/fichiers/2020/48/6/1606562009-avatar-pp.png" class="card__image" alt="">            <p class="card__name"><b>Carpentier Thibaut</b></p>
+                    <div class="grid-container">
+
+                        <div class="grid-child-posts">
+                            Étudiant Informatique
+                        </div>
+
+                    </div>
+                    <ul class="social-icons">
+                        <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/thibaut-carpentier/" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-github" title="GitHub"></i></a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="ui primary button" onclick="window.location.href = 'contact.html'">Acceder à la page de contact</div>
+
+            </div>
+    </div>
+    </div>
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('.nav_btn').click(function(){
+            $('.mobile_nav_items').toggleClass('active');
+        });
+    });
+
+    function show_link(id) {
+        console.log(document.getElementById('linkedin_link').style.display);
+        if(document.getElementById('linkedin_link').style.display === "none" || document.getElementById('linkedin_link').style.display === "") {
+            document.getElementById('linkedin_link').style.display = "inline";
+        } else {
+            document.getElementById('linkedin_link').style.display = "none";
+        }
+
+
+    }
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+<script src="../../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="icon" href="https://image.noelshack.com/fichiers/2021/53/7/1609697163-seekpng-com-portfolio-icon-png-1545314.png" />
+
+
+
+</head>
+<body id="body">
+
+
+<input type="checkbox" id="check">
+<!--header area start-->
+<header>
+    <label for="check">
+        <i class="fas fa-bars nav_btn" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+        <h3>PORTFOLIO</h3>
+    </div>
+</header>
+<!--header area end-->
+<!--mobile navigation bar start-->
+<div class="mobile_nav">
+    <div class="nav_bar">
+        <img src="https://image.noelshack.com/fichiers/2020/48/6/1606562009-avatar-pp.png" class="mobile_profile_image" alt="">
+        <p><b>CARPENTIER Thibaut</b></p>
+    </div>
+
+
+    <div class="mobile_nav_items">
+        <a href="index.html"><i class=" big home icon"></i><span>Index </span></a>
+        <a href="aboutme.html"><i class=" big user icon"></i><span>A propos de moi</span></a>
+        <a href="projet.html"><i class="big archive icon"></i><span>Projets</span></a>
+        <a href="contact.html"><i class="big envelope icon"></i><span>Contact</span><p class="indicator"></p></a>
+        <div class="language_choose">
+            <a href="#"><img class="fr_flag" src="../../asset/icons/french_flag.png" alt="" style="text-align: center"></a>
+            <a href="../EN/contact.html"><img class="uk_flag" src="../../asset/icons/united-kingdom-flag-icon-256.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<!--mobile navigation bar end-->
+<!--sidebar start-->
+<div class="sidebar">
+    <div class="profile_info">
+        <img src="https://image.noelshack.com/fichiers/2020/48/6/1606562009-avatar-pp.png" class="profile_image" alt="">
+        <h4>Thibaut</h4>
+    </div>
+    <a href="index.html"><i class=" big home icon"></i><span>Index</span></a>
+    <a href="aboutme.html"><i class=" big user icon"></i><span>A propos de moi</span></a>
+    <a href="projet.html" class="active"><i class="big archive icon"></i><span>Projets</span></a>
+    <a href="contact.html"><i class="big envelope icon"></i><span>Contact</span><p class="indicator"></p></a>            <div class="language_choose">
+    <a href="#"><img class="fr_flag" src="../../asset/icons/french_flag.png" alt="" style="text-align: center"></a>
+    <a href="../EN/contact.html"><img class="uk_flag" src="../../asset/icons/united-kingdom-flag-icon-256.png" alt=""></a>
+</div>
+
+</div>
+<!--sidebar end-->
+
+
+<div class="content_page">
+
+    <div class="title">
+        <h2 class="ui center aligned icon header">
+            <i class="circular envelope icon"></i>
+            Contact
+        </h2>
+    </div>
+    <div class="container-pp">
+        <div class="card-pp">
+            <img src="https://image.noelshack.com/fichiers/2020/48/6/1606562009-avatar-pp.png" class="card__image" alt="">            <p class="card__name"><b>Carpentier Thibaut</b></p>
+            <div class="grid-container">
+
+                <div class="grid-child-posts">
+                    Étudiant Informatique
+                </div>
+
+            </div>
+            <ul class="social-icons">
+                <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/thibaut-carpentier/" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fab fa-github" title="GitHub"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="ui horizontal divider header">
+        <i class="envelope icon"></i>
+        Formulaire de contact
+    </h2>
+
+<div class="formulaire">
+    <form id="contact_form" class="ui form" action="" method="post" onSubmit="return Verification()">
+        <div id="error_message"></div>
+        <div class="two column">
+            <div class="two fields">
+                <div class="field" id="name">
+                    <label for="idNom">Nom</label>
+                    <input type="text" name="nom" id="idNom" autocomplete="on">
+                </div>
+                <div class="field" id="prenom">
+                    <label for="idPrenom">Prénom</label>
+                    <input type="text" name="prenom" id="idPrenom" autocomplete="on">
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field" id="email">
+                    <label for="idEmail">Email</label>
+                    <input type="text" name="email" id="idEmail" autocomplete="on">
+                </div>
+                <div class="field" id="telephone">
+                    <label for="idTel">Téléphone</label>
+                    <input type="tel" name="tel" id="idTel" autocomplete="on">
+                </div>
+            </div>
+        </div>
+        <div class="field" id="message">
+            <label for="idText">Message</label>
+            <textarea name="text" cols="30" rows="10" id="idText"></textarea>
+        </div>
+        <button id="send_btn" type="submit" class="ui primary submit button" name="valider">Envoyer <i class="fas fa-paper-plane"></i></button>
+    </form>
+
+</div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+    function validateEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return re.test(email);
+    }
+
+    function validatePhone(phone) {
+        var re = /^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$/i;
+        return re.test(phone);
+
+    }
+
+    function Verification() {
+// Récupérer lavaleur des champs nom et email
+        var Nom = document.getElementById('idNom').value;
+        var Email = document.getElementById('idEmail').value;
+        var Prenom = document.getElementById('idPrenom').value;
+        var Telephone = document.getElementById('idTel').value;
+        var Text = document.getElementById('idText').value;
+
+        var error = '<div class="error_message"><i class="large yellow warning icon"></i><span id="error">Erreurs :</span>';
+
+        var isNom,isEmail,isPrenom,isTelephone,isText = false;
+        var isEmailCorrect,isTelephoneCorrect = true;
+
+// Contrôle sur le nom
+        if(Nom===''){
+            document.getElementById('name').innerHTML = '<label for="idNom">Nom</label>\n' +
+                '                    <input type="text" name="nom" id="idNom">'
+            document.getElementById('idNom').style.border="red solid 2px";
+            document.getElementById('name').innerHTML = document.getElementById('name').innerHTML + '<i class="big close icon" style="color: red"></i>';
+            document.getElementById('idNom').value = Nom;
+            // Permet de bloquer l'envoi du formulaire
+        }
+        else{
+            document.getElementById('name').innerHTML = '<label for="idNom">Nom</label>\n' +
+                '                    <input type="text" name="nom" id="idNom">';
+            document.getElementById('idNom').style.backgroundColor="#9C6";
+            document.getElementById('name').innerHTML = document.getElementById('name').innerHTML + '<i class="big check icon" style="color: green"></i>';
+            document.getElementById('idNom').value = Nom;
+            isNom = true;
+        }
+
+        // Contrôle sur le Prenom
+        if(Prenom === ''){
+            document.getElementById('prenom').innerHTML = '<label for="idPrenom">Prénom</label>\n' +
+                '                    <input type="text" name="prenom" id="idPrenom">'
+            document.getElementById('idPrenom').style.border="red solid 2px";
+            document.getElementById('prenom').innerHTML = document.getElementById('prenom').innerHTML + '<i class="big close icon" style="color: red"></i>';
+            document.getElementById('idPrenom').value = Prenom;
+
+// Permet de bloquer l'envoi du formulaire
+        }
+    else{
+            document.getElementById('prenom').innerHTML = '<label htmlFor="idPrenom">Prénom</label>' + '<input type="text" name="prenom" id="idPrenom">';
+            document.getElementById('idPrenom').style.backgroundColor="#9C6";
+            document.getElementById('prenom').innerHTML = document.getElementById('prenom').innerHTML + '<i class="big check icon" style="color: green"></i>';
+            document.getElementById('idPrenom').value = Prenom;
+            isPrenom = true;
+        }
+
+// Contrôle sur l'email
+        if(Email==='') {
+            document.getElementById('email').innerHTML = '<label htmlFor="idEmail">Email</label>\n' +'<input type="text" name="email" id="idEmail">';
+            document.getElementById('idEmail').style.border="red solid 2px";
+            document.getElementById('email').innerHTML = document.getElementById('email').innerHTML + '<i class="big close icon" style="color: red"></i>';
+            document.getElementById('idEmail').value = Email;
+        }
+        else if (!validateEmail(Email)) {
+            document.getElementById('email').innerHTML = '<label htmlFor="idEmail">Email</label>\n' +'<input type="text" name="email" id="idEmail">';
+            document.getElementById('idEmail').style.border="red solid 2px";
+            document.getElementById('email').innerHTML = document.getElementById('email').innerHTML + '<i class="big close icon" style="color: red"></i>';
+            document.getElementById('idEmail').value = Email;
+            isEmailCorrect = false;
+        }
+        else{
+            document.getElementById('email').innerHTML = '<label htmlFor="idEmail">Email</label>\n' +'<input type="text" name="email" id="idEmail">';
+            document.getElementById('idEmail').style.backgroundColor="#9C6";
+            document.getElementById('email').innerHTML = document.getElementById('email').innerHTML + '<i class="big check icon" style="color: green"></i>';
+            document.getElementById('idEmail').value = Email;
+            isEmail = true;
+        }
+
+        //Controle du telephone
+        if(Telephone === ''){
+            document.getElementById('telephone').innerHTML = '<label for="idTel">Téléphone</label>\n' +'<input type="tel" name="tel" id="idTel">';
+            document.getElementById('idTel').style.border="red solid 2px";
+            document.getElementById('telephone').innerHTML = document.getElementById('telephone').innerHTML + '<i class="big close icon" style="color: red"></i>';
+            document.getElementById('idTel').value = Telephone;
+// Permet de bloquer l'envoi du formulaire
+        }
+        else if (!validatePhone(Telephone)) {
+            document.getElementById('telephone').innerHTML = '<label for="idTel">Téléphone</label>\n' +'<input type="tel" name="tel" id="idTel">';
+            document.getElementById('idTel').style.border="red solid 2px";
+            document.getElementById('telephone').innerHTML = document.getElementById('telephone').innerHTML + '<i class="big close icon" style="color: red"></i>';
+            document.getElementById('idTel').value = Telephone;
+            isTelephoneCorrect = false;
+        }
+        else{
+            document.getElementById('telephone').innerHTML = '<label for="idTel">Téléphone</label>\n' +'<input type="tel" name="tel" id="idTel">';
+            document.getElementById('idTel').style.backgroundColor="#9C6";
+            document.getElementById('telephone').innerHTML = document.getElementById('telephone').innerHTML + '<i class="big check icon" style="color: green"></i>';
+            document.getElementById('idTel').value = Telephone;
+            isTelephone = true;
+        }
+
+        //Controle du message
+        if(Text === ''){
+            document.getElementById('message').innerHTML = '<label for="idText">Message</label>\n' +'<textarea name="text" cols="30" rows="10" id="idText"></textarea>';
+            document.getElementById('idText').style.border="red solid 2px";
+            document.getElementById('message').innerHTML = document.getElementById('message').innerHTML + '<i class="big close icon" style="color: red"></i>';
+            document.getElementById('idText').value = Text;
+// Permet de bloquer l'envoi du formulaire
+        }
+        else{
+            document.getElementById('message').innerHTML = '<label for="idText">Message</label>\n' +'<textarea name="text" cols="30" rows="10" id="idText"></textarea>';
+            document.getElementById('idText').style.backgroundColor="#9C6";
+            document.getElementById('message').innerHTML = document.getElementById('message').innerHTML + '<i class="big check icon" style="color: green"></i>';
+            document.getElementById('idText').value = Text;
+            isText = true;
+        }
+
+        if(!isNom) {
+            error += '<li><span>Vous devez compléter votre nom !</span></li>';
+        }
+        if (!isPrenom){
+            error += '<li><span>Vous devez compléter votre prénom !</span></li>';
+        }
+        if (!isEmail){
+            error += '<li><span>Vous devez compléter votre email !</span></li>';
+        }else if(isEmailCorrect) {
+            error += '<li><span>Vous devez entrez une email correct !</span></li>';
+        }
+
+        if (!isTelephone){
+            error += '<li><span>Vous devez compléter votre téléphone !</span></li>';
+        }else if(!isTelephoneCorrect) {
+            error += '<li><span>Vous devez entrez un numéro de téléphone correct</span></li>';
+        }
+
+        if (!isText){
+            error += '<li><span>Vous devez entrer votre message !</span></li>';
+        }
+
+
+        if(!isNom || !isPrenom || !isEmail || !isTelephone || !isText || isEmailCorrect || !isTelephoneCorrect) {
+            document.getElementById('error_message').innerHTML = error + '</div>'
+            return false
+        }
+    }
+
+
+    $(document).ready(function(){
+        $('.nav_btn').click(function(){
+            $('.mobile_nav_items').toggleClass('active');
+        });
+    });
+
+    function show_link(id) {
+
+        if(document.getElementById('linkedin_link').style.display === "none" || document.getElementById('linkedin_link').style.display === "") {
+            document.getElementById('linkedin_link').style.display = "inline";
+        } else {
+            document.getElementById('linkedin_link').style.display = "none";
+        }
+
+
+    }
+</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+<script src="../../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "react": "^16.14.0",
+    "semantic-ui-react": "^2.0.1"
+  }
+}
