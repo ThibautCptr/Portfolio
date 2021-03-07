@@ -768,6 +768,13 @@ button:hover, a:hover {
     text-align: center;
 }
 
+#deplacement {
+    color: black;
+    font-size: 30px;
+    width: calc(100% - 50%);
+    margin-left: 40%;
+}
+
 #hobby i {
     margin-right: 10px;
 }
