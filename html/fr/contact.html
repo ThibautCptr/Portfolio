@@ -96,6 +96,12 @@
         Formulaire de contact
     </h2>
 
+
+    <h2 class="ui horizontal divider header" style="color:red">
+        <i class="warning icon"></i>
+        NON FONCTIONNELLE
+    </h2>
+
 <div class="formulaire">
     <form id="contact_form" class="ui form" action="" method="post" onSubmit="return Verification()">
         <div id="error_message"></div>
@@ -125,10 +131,15 @@
             <label for="idText">Message</label>
             <textarea name="text" cols="30" rows="10" id="idText"></textarea>
         </div>
-        <button id="send_btn" type="submit" class="ui primary submit button" name="valider">Envoyer <i class="fas fa-paper-plane"></i></button>
+        <button id="send_btn" type="submit" class="ui primary submit button" name="valider" disabled>Envoyer <i class="fas fa-paper-plane"></i></button>
     </form>
 
+    <h2 class="ui horizontal divider header" style="color:red">
+        <i class="warning icon"></i>
+        NON FONCTIONNELLE
+    </h2>
 </div>
+
 </div>
 
 
